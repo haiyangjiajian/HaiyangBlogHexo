@@ -15,14 +15,13 @@ category: 工具
 	
 	但问题总会有聪明办法解决。GIT中用git rm --cached xxx可以在不动项目当前工作空间的情况下， 将文件从当前（未提交）版本中移除。如此而来简单方法就出来了：
 	
+	```bash
 	git rm -r --cached .
-	
 	git add .
-	
 	git commit -m ".gitignore is now working"
-
+	```
 	
-	[参照这里](http://davidaq.com/technique/share/2015/04/22/gitignore-update.html)
+[参照这里](http://davidaq.com/technique/share/2015/04/22/gitignore-update.html)
 
 2. git 取消push
 
@@ -46,10 +45,10 @@ category: 工具
 
 	如果需要merge远程分支的东西，尽量不要用git pull。 可以使用：
 	
-	
+	```bash
 	git fetch origin
-	
 	git rebase origin/master   // 可以理解为：将服务器master分支映射到本地的一个临时分支上，然后将本地分支上的变化合并到这个临时分支，然后再用这个临时分支初始化本地分支
+	```
 
 
 
@@ -82,20 +81,21 @@ category: 工具
 
 8. 单独统计每个人的增删行数
 
-	```
+	```bash
 	git log --format='%aN' | sort -u | while read name; do echo -en "$name\t"; git log --author="$name" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }' -; done
 	```
 
 9. 打tag
-
+	```bash
 	git tag -a v1.1.2 -m 'my version' 新增tag
 	git push origin v1.1.2 将新建的tag推到远端
 	git tag 列出现有标签
 	git show v1.1.2 查看相应标签的信息
+	```
 	
 10. 错误的创建了一个文件config.java提交了以后，发现应该改为大写Config.java。但是执行git status后没有任何提示。研究后发现原因是：git 默认对于文件名大小写是不敏感的，上面修改了首字母大写,但是git并没有发现代码任何改动。解决方案是配置git config使它对大小写敏感
 
-	```
+	```bash
 	git config core.ignorecase false
 	```
 11. git rebase
@@ -104,7 +104,7 @@ category: 工具
 	
 	rebase并不是将B的commit如C直接移动到了别的分枝上，而是创建了一个副本C1，二者的hashcode并不相同
 	
-	```
+	```bash
 	git rebase -i master 交互式的rebase
 	```
 	

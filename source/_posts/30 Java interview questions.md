@@ -2,7 +2,7 @@
 layout: post
 title: java面试中高频的30个问题
 tags: [java]
-category: 语言
+category: 编程
 ---
 
 在网上看到了这篇文章[30个最常被问的java面试题](http://javarevisited.blogspot.sg/2014/02/top-30-java-phone-interview-questions.html)发现这些问题和答案还挺有价值的，将其翻译总结一下。有些地方觉得英语更容易表示就直接引用了原文
@@ -41,13 +41,6 @@ category: 语言
 9. HashTable和HashMap的区别
       
 	HashTable是线程安全的，HashMap不是，需要额外的同步Map m = Collections.synchronizeMap(hashMap)，所以table比较慢；Map可以插入空的key或者value；HashMap和HashTable是用Hash实现的，TreeMap是用红黑树实现的。
-	
-	HashTable容器使用synchronized来保证线程安全，但在线程竞争激烈的情况下HashTable的效率非常低下。因为当一个线程访问HashTable的同步方法时，其他线程访问HashTable的同步方法时，可能会进入阻塞或轮询状态。
-	
-	HashTable容器在竞争激烈的并发环境下表现出效率低下的原因是所有访问HashTable的线程都必须竞争同一把锁，那假如容器里有多把锁，每一把锁用于锁容器其中一部分数据，那么当多线程访问容器里不同数据段的数据时，线程间就不会存在锁竞争，从而可以有效的提高并发访问效率，这就是ConcurrentHashMap所使用的锁分段技术，首先将数据分成一段一段的存储，然后给每一段数据配一把锁，当一个线程占用锁访问其中一个段数据的时候，其他段的数据也能被其他线程访问。
-	
-	ConcurrentHashMap是由Segment数组结构和HashEntry数组结构组成。Segment是一种可重入锁ReentrantLock，在ConcurrentHashMap里扮演锁的角色，HashEntry则用于存储键值对数据。一个ConcurrentHashMap里包含一个Segment数组，Segment的结构和HashMap类似，是一种数组和链表结构， 一个Segment里包含一个HashEntry数组，每个HashEntry是一个链表结构的元素， 每个Segment守护者一个HashEntry数组里的元素,当对HashEntry数组的数据进行修改时，必须首先获得它对应的Segment锁。
-
 
 10. ArrayList和LinkedList的相同和不同
     相同：都是继承自List；都不是同步的；有序的；允许重复；
