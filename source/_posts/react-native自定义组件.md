@@ -11,10 +11,9 @@ react native在app开发上的一个优势就是组件化开发，当有了足�
 
 ### picker的效果
 
+<img src="{{site.url}}/assets/img/rn/picker1.png" width = "260" height = "360" alt="native view"/>
 
-<img src="{{site.url}}/public/img/rn/picker1.png" width = "300" height = "200" alt="native view"/>
-
-<img src="{{site.url}}/public/img/rn/picker2.png" width = "300" height = "200" alt="native view"/>
+<img src="{{site.url}}/assets/img/rn/picker2.png" width = "260" height = "360" alt="native view"/>
 
 
 其中picker要展示的内容，百度、搜狗、谷歌等均可以由父组件指定，其样式也可以由父组件指定。

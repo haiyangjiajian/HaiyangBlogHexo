@@ -80,7 +80,7 @@ per_page: 8
 pagination_dir: page
 
 #Disqus
-disqus_shortname: haiyangjiajian
+disqus_shortname: 
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
@@ -106,12 +106,12 @@ deploy:
 sitemap:
     path: sitemap.xml
 baidusitemap:
-    path: baidusitemap.xm
+    path: baidusitemap.xml
 
 feed:
     type: atom
     path: atom.xml
-    limit: 60
+    limit: 100
 
 jsonContent:
   meta: false
