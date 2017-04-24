@@ -83,14 +83,14 @@ cookie没有被编入标准化的http／1.1的RFC2016中。现在使用的是net
 1. Set-Cookie 用在响应首部字段中，字段包括
 
 	| 属性 | 说明 |
-	|------|---------|
+	|:-----|:---------|
 	| NAME=VALUE  | 赋予cookie的名称和其值 |
-	| expires=DATE | 指定浏览器可以发送Cookie的有效期，若省略，其有效期为浏览器关闭之前|
-	| path=PATH | 将服务器上的文件目录作为Cookie的适用对象，若省略，默认为文档所在的文件目录，不过这个限制可以避开|
-	| domain=域名| Cookie适用对象的域名，若省略，默认为创建Cookie的服务器的域名，采用结尾匹配，如指定为a.com, www.a.com, www2.a.com都可以匹配|
-	| secure| 仅在https的通信时才发送Cookie，通过 Set-Cookie: name=value; secure指定|
-	| HttpOnly| 使Cookie不能被JS脚本访问,可以防止XSS，通过 Set-Cookie: name=value; HttpOnly指定|
-	
+	| expires=DATE | 指定浏览器可以发送Cookie的有效期，若省略，其有效期为浏览器关闭之前 |
+	| path=PATH | 将服务器上的文件目录作为Cookie的适用对象，若省略，默认为文档所在的文件目录，不过这个限制可以避开 |
+	| domain=域名 | Cookie适用对象的域名，若省略，默认为创建Cookie的服务器的域名，采用结尾匹配，如指定为a.com, www.a.com, www2.a.com都可以匹配 |
+	| secure | 仅在https的通信时才发送Cookie，通过 Set-Cookie: name=value; secure指定 |
+	| HttpOnly | 使Cookie不能被JS脚本访问,可以防止XSS，通过 Set-Cookie: name=value; HttpOnly指定 |
+
 2. Cookie 用在请求首部字段中，在请求中包含从服务器接收到的Cookie
 	
 	
