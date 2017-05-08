@@ -274,7 +274,7 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 
-打开React Nativde dev server。在根目录运行
+打开React Native dev server。在根目录运行
 
 
 ``` bash
