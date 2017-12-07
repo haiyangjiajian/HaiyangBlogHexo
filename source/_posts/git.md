@@ -5,7 +5,7 @@ tags: [tools]
 category: 工具
 ---
 
-在工作之中使用git，除了常用的clone，add，commit，push，fetch，pull，merge等还会经常出现一些其他需要解决的问题，现在将其总结下
+在工作之中使用git，除了常用的clone，add，commit，push，fetch，pull，merge等还会经常出现一些其他需要解决的问题，现在将其总结下:
 
 1. 忘记添加.gitignore
 
@@ -20,27 +20,22 @@ category: 工具
 	git add .
 	git commit -m ".gitignore is now working"
 	```
+	[参照这里](http://davidaq.com/technique/share/2015/04/22/gitignore-update.html)
 	
-[参照这里](http://davidaq.com/technique/share/2015/04/22/gitignore-update.html)
-
 2. git 取消push
 
-	方法1:
-	
-	1. git reset -\-hard HEAD~1
-	2. 然后再使用git push origin "your branch name" -\-force将本次变更强行推送至服务器。这样在服务器上的最后一次错误提交也彻底消失了。
-	
-	方法2:
-	
-	1. 在本地git revert，覆盖掉上一次的commit
-	2. git push origin "your branch name"
-
-
+	```
+		方法1:
+			1. git reset -\-hard HEAD~1
+			2. 然后再使用git push origin "your branch name" -\-force将本次变更强行推送至服务器。这样在服务器上的最后一次错误提交也彻底消失了。
+		
+		方法2:
+			1. 在本地git revert，覆盖掉上一次的commit
+			2. git push origin "your branch name"
+	```
 3. git reflog
 
 	git reflog/git log -g记录每次修改head的操作，可以查看所有历史修改记录,然后	通过git reset命令进行恢复
-
-
 4. git merge和git rebase
 
 	如果需要merge远程分支的东西，尽量不要用git pull。 可以使用：
@@ -49,9 +44,6 @@ category: 工具
 	git fetch origin
 	git rebase origin/master   // 可以理解为：将服务器master分支映射到本地的一个临时分支上，然后将本地分支上的变化合并到这个临时分支，然后再用这个临时分支初始化本地分支
 	```
-
-
-
 5. git stash
 
 	git stash 将未commit改变缓存,不保存新加的文件
@@ -63,8 +55,6 @@ category: 工具
 	git stash pop 应用栈顶内容并弹栈
 	
 	git stash clear 清空队列
-
-
 6. git revert和git reset
 
 	git revert是用一个新的提交取消掉了之前的一个错误提交
@@ -77,14 +67,11 @@ category: 工具
 7. git自动补全
 
 	[参见github](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash)
-
-
 8. 单独统计每个人的增删行数
 
 	```bash
 	git log --format='%aN' | sort -u | while read name; do echo -en "$name\t"; git log --author="$name" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }' -; done
 	```
-
 9. 打tag
 	```bash
 	git tag -a v1.1.2 -m 'my version' 新增tag
@@ -92,7 +79,6 @@ category: 工具
 	git tag 列出现有标签
 	git show v1.1.2 查看相应标签的信息
 	```
-	
 10. 错误的创建了一个文件config.java提交了以后，发现应该改为大写Config.java。但是执行git status后没有任何提示。研究后发现原因是：git 默认对于文件名大小写是不敏感的，上面修改了首字母大写,但是git并没有发现代码任何改动。解决方案是配置git config使它对大小写敏感
 
 	```bash
@@ -107,4 +93,9 @@ category: 工具
 	```bash
 	git rebase -i master 交互式的rebase
 	```
+12. WIP标志
+	一些merge request可能并不希望被merge可以将其title以[WIP] 或者 WIP:开头，这样不会被merge，知道标题中移除了[WIP] 或者 WIP:
+	
+	
+	
 	

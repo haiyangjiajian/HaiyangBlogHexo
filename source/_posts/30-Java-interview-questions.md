@@ -121,12 +121,11 @@ category: 编程
 25. Can Enum types implement interface in Java?
 	
 	 Yes
-
+	 
 26. Can enum extend class in Java? 
 
 	不可以，因为java规定一个class只能继承一个class。enum默认继承自java.lang.Enum
 	
-
 27. How to prevent your class from being subclassed? 
 
 	Make it final or make constructor private
