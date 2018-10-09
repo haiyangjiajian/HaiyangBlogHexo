@@ -2,10 +2,12 @@
 layout: post
 title: Java内存虚拟机总结
 tags: [java]
-category: 编程
+category: coding
 ---
 
 读过几遍周志明老师的《深入理解Java虚拟机:JVM高级特性与最佳实践》获益匪浅，但是关于一些问题经常忘记又需要重新翻阅。现在将其中内存虚拟机相关章节的内从自己浓缩总结一下，以供参阅。
+
+<!-- more -->
 
 ### 1. Java内存区域介绍
 

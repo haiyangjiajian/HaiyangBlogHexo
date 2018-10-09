@@ -2,7 +2,7 @@
 layout: post
 title: Android常用网络请求框架简析
 tags: [android]
-category: 编程
+category: coding
 ---
 
 # Android常用网络请求框架简析
@@ -26,6 +26,8 @@ category: 编程
 - 数据解析
 - 错误处理
 - 等等
+
+<!-- more -->
 
 
 一个好的网络请求框架应该可以和业务代码的**耦合性尽量降低**。

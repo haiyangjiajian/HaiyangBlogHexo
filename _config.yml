@@ -4,7 +4,7 @@
 
 # Site
 title: haiyangjiajian的博客
-subtitle: 程序开发者
+subtitle: A minus coder
 description: 
 author: haiyangjiajian
 language:
@@ -78,6 +78,8 @@ time_format: HH:mm:ss
 ## Set per_page to 0 to disable pagination
 per_page: 8
 pagination_dir: page
+
+favicon: /favicon.png
 
 #Disqus
 disqus_shortname: 

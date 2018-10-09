@@ -2,7 +2,8 @@
 layout: post
 title: play登录状态管理
 tags: [scala, play]
-category: 编程
+category: coding
+comments: true
 ---
 
 ## play登录状态管理
@@ -21,6 +22,8 @@ It’s important to understand that Session and Flash data are not stored by the
 大意是说play通过cookie来保存session的信息，只能保存最大为4k的字符串。默认的cookie名字是PLAY_SESSION，可以在application.conf里面配置。
 
 来看一下这个配置是怎么使用，如何通过这个session来保存用户的登录信息。
+
+<!-- more -->
 
 在application.conf里有如下配置：
 

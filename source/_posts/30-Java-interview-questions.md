@@ -2,10 +2,12 @@
 layout: post
 title: java面试中高频的30个问题
 tags: [java]
-category: 编程
+category: coding
 ---
 
 在网上看到了这篇文章[30个最常被问的java面试题](http://javarevisited.blogspot.sg/2014/02/top-30-java-phone-interview-questions.html)发现这些问题和答案还挺有价值的，将其翻译总结一下。有些地方觉得英语更容易表示就直接引用了原文
+
+<!-- more -->
 
 1. 为什么String不可变
 

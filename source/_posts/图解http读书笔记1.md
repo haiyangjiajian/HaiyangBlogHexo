@@ -2,11 +2,12 @@
 layout: post
 title: 图解http读书笔记1 
 tags: [读书笔记, http]
-category: 读书
+category: read
 ---
 
 这是自己读*图解http*的读书笔记，没有读 *TCP/IP详解 卷1*是因为考虑到自己的时间，想碰到具体深入底层的问题时再去查阅。这篇包含了http报文首部和http状态码，这两部分其实放到一起更易贯通。有一些状态码是针对特定首部字段才会出现的。
 
+<!-- more -->
 
 ### HTTP报文首部
 

@@ -2,12 +2,15 @@
 layout: post
 title: git实用技巧
 tags: [tools]
-category: 工具
+category: tools
 ---
 
 在工作之中使用git，除了常用的clone，add，commit，push，fetch，pull，merge等还会经常出现一些其他需要解决的问题，现在将其总结下:
 
+<!-- more -->
+
 1. 忘记添加.gitignore
+
 
 	GIT新手最容易犯的一个错误就是没有添加.gitignore，而把不该上传的东西上传了， 而GIT老手有时会因为在规则里面写了个.*而导致.gitignore没有加入到版本控制当中， 事后才发现，但此时项目中已充斥了“垃圾”。
 	
