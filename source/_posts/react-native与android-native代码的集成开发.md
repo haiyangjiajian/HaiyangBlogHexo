@@ -2,7 +2,7 @@
 layout: post
 title: react native与android native代码的集成开发 
 tags: [react_native, android]
-category: coding
+category: coder
 ---
 
 这篇文章讲的不是[native module](https://facebook.github.io/react-native/docs/native-modules-android.html)相关内容，即如何在react native的js代码中调用androd的native代码。也不是[native components](https://facebook.github.io/react-native/docs/native-components-android.html)相关内容，即如何封装一些原生的组建供react native层使用。这里主要想讲如何在android的应用中，集成react native的页面和如何在react native中启动android activity。这样能达到原生android页面和react native页面互相切换的目的，从而使开发更加灵活。

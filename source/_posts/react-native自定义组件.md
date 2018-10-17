@@ -2,7 +2,7 @@
 layout: post
 title: react native自定义组件
 tags: [react_native]
-category: coding
+category: coder
 ---
 
 react native在app开发上的一个优势就是组件化开发，当有了足够多的自定义组件后，可以很方便的将这些组件拼装起来，开发效率提高很多。本文中将以一个picker为例子，来讲如何包装一个通用性很强的react native组件。本文的示例源码可以在[ReactNativeUIComponents](https://github.com/haiyangjiajian/ReactNativeUIComponents)下载。这个项目未来会不断的维护加入更多实用的组件，也力求这个项目可以作为一个react native的示例项目，包含了react native开发中常用的router，navigator，code push等，可以作为参考。

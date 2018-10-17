@@ -2,7 +2,7 @@
 layout: post
 title: Android app重新签名和查看已有签名
 tags: [android]
-category: coding
+category: coder
 ---
 
 有时候会需要将一个已经签名的Android apk重新签名。比如oppo软件商店的app认领，它会要求你下载一个空包，并将与认领应用一致的签名写入空包中。可以如下操作

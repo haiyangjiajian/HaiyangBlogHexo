@@ -2,7 +2,7 @@
 layout: post
 title: react native 痛点与优势
 tags: [react_native]
-category: coding
+category: coder
 ---
 
 随着自己对react native开发的深入，对于其一些痛点和优势也有着更深的体会

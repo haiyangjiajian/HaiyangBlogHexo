@@ -2,7 +2,7 @@
 layout: post
 title: react native related problems and solutions
 tags: [react_native]
-category: coding
+category: coder
 ---
 
 将用博客来记录自己在react native开发过程中遇到的问题，这篇主要侧重于配置过程中用到的问题。这种问题可能只需要一个合适的答案，找寻这个答案可能需要花费半天的工作时间，甚至更久。

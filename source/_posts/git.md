@@ -2,7 +2,7 @@
 layout: post
 title: git实用技巧
 tags: [tools]
-category: tools
+category: tool
 ---
 
 在工作之中使用git，除了常用的clone，add，commit，push，fetch，pull，merge等还会经常出现一些其他需要解决的问题，现在将其总结下:

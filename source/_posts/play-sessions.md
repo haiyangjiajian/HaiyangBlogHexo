@@ -2,7 +2,7 @@
 layout: post
 title: play登录状态管理
 tags: [scala, play]
-category: coding
+category: coder
 comments: true
 ---
 

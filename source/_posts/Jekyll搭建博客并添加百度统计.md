@@ -2,7 +2,7 @@
 layout: post
 title: Jekyll搭建博客并添加百度统计 
 tags: [tools]
-category: tools
+category: tool
 ---
 
  自己的这个博客是在gitpage上用Jekyll搭建起来的，使用的是[这个模版](https://mmistakes.github.io/hpstr-jekyll-theme/theme-setup/)。搭建以后一直是在github上build的，也没有添加点击统计的工具。下面介绍一下自己完成这本地build和添加百度统计的过程和遇到的问题。

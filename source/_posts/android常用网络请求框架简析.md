@@ -2,7 +2,7 @@
 layout: post
 title: Android常用网络请求框架简析
 tags: [android]
-category: coding
+category: coder
 ---
 
 # Android常用网络请求框架简析
